@@ -78,7 +78,7 @@ export async function listen(
   const listhenOptions = defu<ListenOptions, ListenOptions[]>(_options, {
     name: "",
     https: false,
-    http2: false,
+    http2: true,
     port: process.env.PORT || 3000,
     hostname: _hostname ?? getDefaultHost(_public),
     showURL: true,

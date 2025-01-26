@@ -568,7 +568,7 @@ async function listen(handle, _options = {}) {
   const listhenOptions = defu.defu(_options, {
     name: "",
     https: false,
-    http2: false,
+    http2: true,
     port: process.env.PORT || 3e3,
     hostname: _hostname ?? getDefaultHost(_public),
     showURL: true,
